@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NoNaGon - Hello</title>
+
+    <!-- Bootstrap core CSS -->
+    <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+      <!-- Navigation -->
+      <span id="app">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" v-bind:class="shrink">
+              <div class="container">
+                  <a class="navbar-brand" href="#page-top" v-on:click="scrollSmooth"><img alt="" src="img/icon.png"/> NoNaGon</a>
+                  <button class="navbar-toggler navbar-toggler-right" type="button" v-on:click="showMenu=!showMenu">
+                      Menu
+                      <i class="fa fa-bars"></i>
+                  </button>
+                  <transition name="collapse" enter-active-class="collapsing" leave-active-class="collapsing">
+                      <div class="navbar-collapse" v-show="showMenu" >
+                          <ul class="navbar-nav ml-auto">
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#download" v-on:click="scrollSmooth">Download</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#features" v-on:click="scrollSmooth">Features</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#contact" v-on:click="scrollSmooth">Contact</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </transition>
+              </div>
+          </nav>
+
+          <header class="masthead">
+              <div class="container h-100">
+                  <div class="row h-100">
+                      <div class="col-lg-6 my-auto">
+                          <div class="header-content mx-auto">
+                              <h1 class="mb-5">모든 게임에서 블럭체인 코인으로 자유롭게 아이템을 사고 파세요.</h1>
+                              <a href="#download" class="btn btn-outline btn-xl" v-on:click="showMenu=false">Start Now for Free!</a>
+                              <div>Count down!!! 10 Day : 10:12:12 </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 my-auto text-center">
+                          <img alt="game pad" src="img/gamepad.png" class="icon01" />
+                      </div>
+                  </div>
+              </div>
+          </header>
+
+          <section class="download bg-primary text-center" id="download">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-8 mx-auto">
+                          <h2 class="section-heading">Discover what all the buzz is about!</h2>
+                          <p>Our app is available on any mobile device! Download now to get started!</p>
+                          <div class="badges">
+                              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <section class="features" id="features">
+              <div class="container">
+                  <div class="section-heading text-center">
+                      <h2>꼭 필요한 기능, 빠른 설치</h2>
+                      <p class="text-muted">Check out what you can do with this app theme!</p>
+                      <hr>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-4 my-auto">
+                          <div class="device-container">
+                              <div class="device-mockup iphone6_plus portrait white">
+                                  <div class="device">
+                                      <div class="screen">
+                                          <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                          <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                                      </div>
+                                      <div class="button">
+                                          <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-8 my-auto">
+                          <div class="container-fluid">
+                              <div class="row">
+                                  <div class="col-lg-6">
+                                      <div class="feature-item">
+                                          <i class="icon-game-controller text-primary"></i>
+                                          <h3>유연한 사용</h3>
+                                          <p class="text-muted">게임을 중단해도 기존에 사용했던 코인을 다른 게임에서 사용할 수 있습니다.</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                      <div class="feature-item">
+                                          <i class="icon-chart text-primary"></i>
+                                          <h3>안전한 거래</h3>
+                                          <p class="text-muted">모든 거래 기록은 블럭체인에 기록되기 때문에 안전합니다.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-lg-6">
+                                      <div class="feature-item">
+                                          <i class="icon-rocket text-primary"></i>
+                                          <h3>빠른 사용</h3>
+                                          <p class="text-muted">편리한 SDK를 제공합니다. 별도의 토큰이나 지갑을 개발할 필요가 없습니다.</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                      <div class="feature-item">
+                                          <i class="icon-shield text-primary"></i>
+                                          <h3>안전한 에어드랍</h3>
+                                          <p class="text-muted">스캠인지 아닌지 불필요한 검증에 시간을 낭비 하지 마세요. 노나곤은 EOS 코인에 어에드랍 됩니다.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <span style="display:none;">
+                      QnA
+                      에어드랍은 뭐가 좋나요?
+                      사용자들은 유명 거래소에 상장됐다는 이유만으로 투자를 하고 있습니다.
+                      전세계 거래소에 ICO된 코인 수만 해도 15,000개가 넘습니다. 개발진들은 실제로 개발능력이 있는지, 백서에 나열되어 있는 기능들을 실제 구현이 가능한 인력으로 구성되어 있는지,
+                      운영진들은 사기의 의도 없이 백서에 나와 있는 목표를 순수한 목적으로 해결할 의지가 있는지 등등 외부에 나타나 있는 정보만으로 진짜 가치가 있는 목적으로 달성 가능 한지 알아내기가 매우 힘이 듭니다.
+                      하지만 앞으로 발전하고 가치가 있는지 확인하기 위해서는 사용자들이 확인해야 할 사항들이 너무 많습니다. 또 처음에는 순수한 목적으로 코인을 개발하지만 악의적인 의도로 스캠으로 발전할 가능성도 매우 높다고 생각합니다. 그래서 노나곤 
+
+                      왜 EOS 기반 토큰인가요?
+                      코인들은 저마다 각자의 목적으로 코인을 개발합니다. 대표적인 지불수단 비트코인, 리플, 라이트코인, 플랫폼 기반 이더리움, 이오스, 퀀텀, 네오 등등
+                      우리는 처음에 이더리움을 염두해 두고 있었습니다. 플랫폼 코인에서 속도는 매우 중요한 요소중에 하나입니다. 크립토키티 트랜잭션 사건[todo link] 처럼 이더리움은 현재 트랜잭션 처리 속도가 매우 느림으로 인해 많은 이슈가 발생하고 있습니다. EOS는 싱글 스레드 초당 처리속도가 20,000[todo link] 건에 이를 정도로 처리 속도가 매우 빠릅니다. 이것은 코인 거래 정보가 블럭체인에 기록되는 속다가 빠르다는 것으로, 이오스 기반 토큰 또한 빠른 거래가 가능하다는 이야기가 됩니다. 또, 이더리움은 거래할 때 마다 개스[todo link]라고 하는 일종의 수수료가 발생합니다. 하지만 이오스는 거래 수수료가 무료입니다. 따라서 노나곤 토큰은 이오스 기반으로 빠르고 저렴한 토큰으로 
+
+                      게임 개발사입니다. 별도 블럭체인을 만들고 싶은데요?
+                        개발비용
+                        테스트비용
+                        보안문제
+
+                      블럭체인 개발은 안전 테스트로 인해 개발 인력의 수와 상관없이 절대적인 개발 기간을 필요로 합니다.
+                      NNG 토큰은 검증이 완료된 EOS 블럭체인 기반 에서 작동하므로 안전하게 작동합니다.
+                      인디 게임을 개발하는데 블럭체인을 사용하고 싶으세요?
+
+                      TODO
+                      roadmap 
+                      git hub link
+                      airdrop countdown
+                      eoskey maxlength
+                      eoskey 검증 로직
+
+                  </span>
+              </div>
+          </section>
+
+          <section class="cta">
+              <div class="cta-content">
+                  <div class="container">
+                      <h2>인디 게임을 개발하나요?<br>게임에 최적화된 노나곤을 사용하세요.</h2>
+                      <a href="#contact" class="btn btn-outline btn-xl" v-on:click="showMenu=false">SDK 받기</a>
+                  </div>
+              </div>
+              <div class="overlay"></div>
+          </section>
+
+          <section class="cta">
+              <div class="cta-content">
+                  <div class="container">
+                      <h2>기발한 아이디어가 있나요?<br>감사합니다!!</h2>
+                      <input name="name" type="text" value="" placeholder="Name"/>
+                      <input name="email" type="email" value="" placeholder="Email"/>
+                      <input name="eoskey" type="text" value="" placeholder="주의!! Private Key가 아닙니다. Public key를 입력하세요."/>
+                      <textarea cols="30" id="" name="" rows="10" placeholder="의견을 주시면 심사를 거쳐 노나곤을 드립니다."></textarea>
+                  </div>
+              </div>
+              <div class="overlay"></div>
+          </section>
+
+          <section class="contact bg-primary" id="contact">
+              <div class="container">
+                  <h2>친구에게 추천해 보세요. 노나곤을 드립니다. </h2>
+                  <ul class="list-inline list-social">
+                      <li class="list-inline-item">
+                          <a href="#">
+                              <i class="fa fa-twitter"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#">
+                              <i class="fa fa-facebook"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#">
+                              <i class="fa fa-google-plus"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </section>
+
+          <footer>
+              <div class="container">
+                  <p>&copy; NoNaGon 2018. All Rights Reserved.</p>
+                  <ul class="list-inline">
+                      <li class="list-inline-item">
+                          <a href="#">Privacy</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#">Terms</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#">FAQ</a>
+                      </li>
+                  </ul>
+              </div>
+          </footer>
+      </span>
+
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+      <script src="js/compiled/nng/landing.js"></script>
+  </body>
+
+</html>
